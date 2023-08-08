@@ -4,19 +4,19 @@ public class Student {
 
     public Student() {
         this.name = " ";
-        this.age = 0;
+        this.cutoff = 0;
         this.registerNumber = 0;
     }
 
-    public Student(String name, int age, int registerNumber) {
+    public Student(String name, float cutoff, int registerNumber) {
         this.name = name;
-        this.age = age;
+        this.cutoff = cutoff;
         this.registerNumber = registerNumber;
     }
 
     private String name;
 
-    private int age;
+    private float cutoff;
     private int registerNumber;
 
     public String getName() {
@@ -27,12 +27,12 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public float getCutoff() {
+        return cutoff;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setCutoff(int cutoff) {
+        this.cutoff = cutoff;
     }
 
     public int getRegisterNumber() {
