@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class StudentList {
 
     Scanner scan = new Scanner(System.in);
-    Student [] list = new Student[3];
-    Student student = new Student();
+    static Student [] list = new Student[3];
     int count = 0;
     public void regiteringStudent(){
         Student student = new Student();
@@ -27,15 +26,11 @@ public class StudentList {
                 list[i] = new Student(student.getName(), student.getCutoff(), student.getRegisterNumber());
             }
         }
-        for (Student item : list ){
-            System.out.println(item.getName() + " - ");
-            System.out.println(item.getCutoff() + " - ");
-            System.out.println(item.getRegisterNumber());
+
+
         }
-//        Arrays.stream(list)
-//                .map(Student::getName)
-//                .forEach(System.out::println);
+
 
     }
 
-}
+
